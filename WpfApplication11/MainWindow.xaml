@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplication11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:rgn="clr-namespace:Microsoft.Practices.Prism.Regions;assembly=Microsoft.Practices.Prism"
+        Title="MainWindow" Height="700" Width="1550" WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="50">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl rgn:RegionManager.RegionName="MainTestRegion" Grid.Row="0"/>
+
+        <Button Click="ButtonBase_OnClick" Grid.Row="1" Content="Switch Views" Height="30" Width="200"/>
+
+    </Grid>
+</Window>
